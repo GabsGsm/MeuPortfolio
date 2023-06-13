@@ -1,0 +1,124 @@
+header {
+  background-color: var(--primario-color);
+  box-shadow: 0.5px 0 4px 1px var(--primario-color);
+  height: 84px;
+}
+
+.logo a,
+.menu a {
+  color: var(--text-color, );
+}
+
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 640px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu {
+    height: 0;
+    flex-direction: column;
+    text-align: center;
+    background: var(--secundario-color);
+    overflow: hidden;
+    transition: height 0.4s ease;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .active {
+    height: 126px;
+  }
+
+  .active-hamburger div:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  .active-hamburger div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .active-hamburger div:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 12px;
+  }
+
+  .menu li {
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0.1px 0 0.7px var(--shadow-color);
+  }
+
+  .menu a {
+    font-size: 1.4em;
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .menu a:hover {
+    transform: scale(1.2);
+  }
+
+  .menu li:hover {
+    background-color: #363333;
+  }
+
+  .header-top {
+    height: 4.2rem;
+  }
+
+  .conteiner-logo,
+  .conteiner-hamburger {
+    margin: auto 0;
+  }
+
+  .conteiner-hamburger {
+    padding: 10px 7px 5px 7px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 10px;
+  }
+
+  .conteiner-hamburger:hover,
+  .hamburger-selecionado {
+    background-color: var(--secundario-color);
+  }
+
+}

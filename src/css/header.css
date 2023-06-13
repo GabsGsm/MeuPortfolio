@@ -1,0 +1,22 @@
+@media screen and (min-width: 641px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px;
+    }
+    .menu{
+        display: flex;
+    }
+    .menu a {
+        margin-left: 18px;
+        font-size: 1.2em;
+    }
+    .logo{
+        font-size: 1.4em;
+    }
+
+    .menu a:hover{
+        border-bottom: 2px solid;
+    }
+}

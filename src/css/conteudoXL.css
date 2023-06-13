@@ -1,0 +1,36 @@
+@media screen and (min-width: 1200px){
+    .conteudo-inicial {
+        display: flex;
+        justify-content: space-around;
+        padding: 110px 0px 0px 0px;
+    }
+
+    .grid-skills {
+        grid-template-columns: repeat(5, 1fr);
+        padding: 30px;
+    }
+
+    #sobre{
+        padding: 40px 120px;
+    }
+
+    .footer-dividido{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+       padding: 20px 0;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .conteiner-apresentacao h1 {
+        font-size: 3.8em;
+        line-height: 1.2;
+    }
+    .conteiner-imagem picture {
+        transform: scale(1.7);
+    }
+}
